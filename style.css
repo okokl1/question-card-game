@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .game-container {
+    text-align: center;
+    max-width: 90%;
+  }
+  
+  .card-container {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .card-container li {
+    background: white;
+    padding: 12px 20px;
+    border: 2px solid #007acc;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 18px;
+    cursor: grab;
+    user-select: none;
+    touch-action: none;
+    transition: transform 0.2s ease;
+  }
+  
+  .card-container li:active {
+    cursor: grabbing;
+    transform: scale(1.05);
+  }
+  
+  .feedback {
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+  }
+  
